@@ -1,0 +1,26 @@
+# HTTP(note)
+server:
+  port: 8888 
+
+# Configure this discovery | cloud server
+eureka:
+  instance:
+    hostname: localhost
+    
+    
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+     
+
+zuul:
+  prefix: /api
+  routes:
+    studentService:
+      path: /studentService/**
+      url: http://localhost:8811
+    yahooService:
+      path: /yahooService/**
+      url: http://localhost:8812
+
+           
