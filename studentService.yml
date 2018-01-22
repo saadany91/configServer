@@ -1,6 +1,6 @@
 # http server port
 server:
-  port: 8811,8812,8813
+  port: 8811
 
 
 # register service to eureka server
