@@ -16,7 +16,6 @@ zuul:
   routes:
     userService:
       path: /userService/**
-      url: http://localhost:8811
     yahooService:
       path: /yahooService/**
       url: http://localhost:8812
