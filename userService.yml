@@ -1,6 +1,23 @@
 server:
   port: 0
+  contextPath: /app
  
+#database and jpa configuration
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: sys as sysdba
+    password: asd123
+    driverClassName: oracle.jdbc.OracleDriver
+    
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle10gDialect
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+      generate_statistics: true
+
 # register service to eureka server
 eureka:
   client:
