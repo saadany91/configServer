@@ -17,6 +17,7 @@ spring:
     hibernate:
       ddl-auto: create
       generate_statistics: true
+      format_sql: true
 
 # register service to eureka server
 eureka:
