@@ -1,4 +1,3 @@
-# http server port
 server:
   port: 0
  
