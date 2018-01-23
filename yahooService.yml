@@ -1,5 +1,6 @@
 server:
   port: 0
+  contextPath: /app
 
 # register service to eureka server
 eureka:
